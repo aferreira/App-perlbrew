@@ -38,6 +38,9 @@ fi
 echo "## Download the latest perlbrew"
 $PERLBREWDOWNLOAD || clean_exit 1
 
+# compute HOME from tilde expansion
+HOME=${HOME:-~}
+
 echo
 echo "## Installing perlbrew"
 
